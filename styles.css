@@ -1,0 +1,323 @@
+/* ==============================
+   RESET Y CONFIGURACIÓN GENERAL
+   ============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #e5e7eb;
+    background-color: #0b0911;
+}
+
+
+/* ==============================
+   CABECERA
+   ============================== */
+
+header {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(109, 40, 217, 0.35),
+            transparent 45%
+        ),
+        linear-gradient(
+            135deg,
+            #05040a,
+            #100b18,
+            #1b102b
+        );
+
+    color: #f8fafc;
+    text-align: center;
+
+    padding: 70px 20px;
+
+    border-bottom: 1px solid #2e1b46;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.5),
+        0 0 50px rgba(109, 40, 217, 0.08);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+header img {
+    width: 170px;
+    height: 170px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 4px solid #7c3aed;
+
+    margin-bottom: 20px;
+
+    background-color: #17121f;
+
+    box-shadow:
+        0 0 25px rgba(124, 58, 237, 0.35),
+        0 0 60px rgba(109, 40, 217, 0.15);
+}
+
+header p {
+    color: #c9c2d6;
+    font-size: 1.2rem;
+}
+
+
+/* ==============================
+   CONTENIDO PRINCIPAL
+   ============================== */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 50px auto;
+}
+
+
+/* ==============================
+   SECCIONES
+   ============================== */
+
+section {
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(109, 40, 217, 0.06),
+            transparent 35%
+        ),
+        #111019;
+
+    padding: 35px;
+    margin-bottom: 30px;
+
+    border: 1px solid #241b30;
+    border-radius: 12px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.3);
+
+    transition:
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+section:hover {
+    border-color: #4c2a6d;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.4),
+        0 0 25px rgba(109, 40, 217, 0.07);
+}
+
+section h2 {
+    color: #a78bfa;
+
+    font-size: 1.8rem;
+
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid #30233e;
+}
+
+section p {
+    color: #c9c2d6;
+    font-size: 1rem;
+}
+
+
+/* ==============================
+   ENLACES
+   ============================== */
+
+a {
+    color: #a78bfa;
+
+    text-decoration: none;
+
+    transition:
+        color 0.3s ease,
+        text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #c4b5fd;
+
+    text-decoration: underline;
+
+    text-shadow:
+        0 0 10px rgba(167, 139, 250, 0.35);
+}
+
+
+/* ==============================
+   TEXTO DESTACADO
+   ============================== */
+
+b {
+    color: #f3eefc;
+}
+
+
+/* ==============================
+   REPOSITORIOS
+   ============================== */
+
+article {
+    background:
+        radial-gradient(
+            circle at 0% 50%,
+            rgba(109, 40, 217, 0.08),
+            transparent 30%
+        ),
+        #0e0c14;
+
+    border: 1px solid #241b30;
+    border-left: 4px solid #6d28d9;
+
+    padding: 20px;
+    margin-top: 15px;
+
+    border-radius: 8px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-4px);
+
+    border-color: #6d28d9;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.4),
+        0 0 25px rgba(109, 40, 217, 0.12);
+}
+
+article p {
+    margin: 0;
+}
+
+article b {
+    display: block;
+
+    color: #f3eefc;
+
+    margin-bottom: 6px;
+}
+
+
+/* ==============================
+   ENLACES DE LOS PROYECTOS
+   ============================== */
+
+article a {
+    word-break: break-word;
+}
+
+article a:hover {
+    color: #c4b5fd;
+}
+
+
+/* ==============================
+   RESPONSIVE - TABLETS
+   ============================== */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 50px 15px;
+    }
+
+    header h1 {
+        font-size: 2.3rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    header img {
+        width: 140px;
+        height: 140px;
+    }
+
+    main {
+        width: 94%;
+        margin: 30px auto;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* ==============================
+   RESPONSIVE - MÓVILES
+   ============================== */
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 1.9rem;
+    }
+
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 1.35rem;
+    }
+
+    section p {
+        font-size: 0.95rem;
+    }
+
+    article {
+        padding: 16px;
+    }
+
+    article a {
+        font-size: 0.9rem;
+        overflow-wrap: anywhere;
+    }
+}
